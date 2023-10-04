@@ -1,9 +1,9 @@
 # Blockchain Wallet Homework: Cryptocurrency Wallet
 
 ## Task
-Step 1: Import Ethereum Transaction Functions into the KryptoJobs2Go Application
-Step 2: Sign and Execute a Payment Transaction
-Step 3: Inspect the Transaction
+1. Import Ethereum Transaction Functions into the KryptoJobs2Go Application
+2. Sign and Execute a Payment Transaction
+3. Inspect the Transaction
 
 ## Instructions
 ### Step 1: Import Ethereum Transaction Functions into the KryptoJobs2Go Application
@@ -92,7 +92,7 @@ wage = hourly_rate * hours
 st.sidebar.write(wage)
 
 ##########################################
-# Step 2 - Part 4:
+### Step 2 - Part 4:
 Call the `send_transaction` function and pass it three parameters: Your Ethereum `account` information. (Remember that this `account` instance was created when the `generate_account` function was called.) From the `account` instance, the application will be able to access the `account.address` information that is needed to populate the `from` data attribute in the raw transaction. The `candidate_address` (which will be created and identified in the sidebar when a customer selects a candidate). This will populate the `to` data attribute in the raw transaction. The `wage` value. This will be passed to the `toWei` function to determine the wei value of the payment in the raw transaction. Save the transaction hash that the `send_transaction` function returns as a variable named `transaction_hash`, and have it display on the application’s web interface.
 
 if st.sidebar.button("Send Transaction"):
@@ -111,6 +111,11 @@ get_people()
 In the terminal type "streamlit run krypto_jobs.py" to run the streamlit app
 
 Take a screenshot of the address, balance, and transaction (TX) count. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
-![image](./Images/Block_Content.png)
+![image](./Images/ETH_Payment_1.png)
+![image](./Images/ETH_Payment_2.png)
 
 Navigate to the Ganache transactions tab and locate the transaction. Click the transaction and take a screenshot of it. Save this screenshot to the README.md file of your GitHub repository for this Challenge assignment.
+![image](./Images/Confirmed_Payment.png)
+
+Verifications for the approved payments
+![image](./Images/Validated_Hash.png)
